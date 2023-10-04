@@ -1,0 +1,931 @@
+* {
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    float: left;
+    width: 100%;
+    /* background: tan; */
+}
+
+.top-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.menu-bar-section {
+    float: left;
+    width: 3%
+}
+
+.menu-bar {
+    float: left;
+    width: 100%;
+    width: 2rem;
+    height: 3px;
+    background: black;
+    margin: 0.2rem 0;
+}
+
+#magnifying-glass {
+    float: left;
+    width: 2.5%;
+}
+
+.region-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-left: 15%;
+    margin-top: 0.5rem;
+
+    /* background: firebrick; */
+}
+
+.region-nav li,
+.region-nav a {
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.region-nav li {
+    margin: 0 1rem;
+}
+
+.bold-span {
+    font-weight: bold;
+}
+
+.top-buttons {
+    height: 4rem;
+
+}
+
+#subscribe-button,
+#login-button {
+    background: rgb(28, 129, 168);
+    color: white;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+    font-size: 1.25rem;
+}
+
+#subscribe-button {
+    width: 15rem;
+    margin-top: -2rem;
+}
+
+#login-button {
+    width: 6rem;
+    margin-left: 0.5rem;
+}
+
+.nyt-title-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* float: left;
+    width: 100%; */
+    border-bottom: 1px solid rgb(221, 218, 218);
+    /* background: blueviolet; */
+}
+
+.day-paper {
+    float: left;
+    width: 20%;
+    /* background: orange; */
+}
+
+.nyt-title-row h2 {
+    /* float: left;
+    width: 50%; */
+    margin-top: 0;
+    margin-left: 1.5%;
+    /* background: yellow; */
+}
+
+.nyt-title-row h5 {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.nyt-title-row span {
+    font-size: 1.25rem;
+}
+
+.nyt-title-row .grey-span {
+    color: grey;
+}
+
+
+.weather-stock {
+    float: right;
+    width: 15%;
+    text-align: right;
+    /* background: orange; */
+}
+
+.bottom-nav {
+    float: left;
+    width: 100%;
+    border-bottom: 2px double black;
+}
+
+.bottom-nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bottom-nav ul li {
+    float: left;
+    width: 5%;
+    font-size: 1rem;
+    list-style: none;
+
+}
+
+
+.bottom-nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* MAIN PART/BODY OF THE PAGE IS BELOW */
+
+.column1 {
+    float: left;
+    width: 65%;
+    /* background: lime; */
+    padding-left: 5rem;
+    /* margin-right: 2rem; */
+}
+
+.column1 p {
+    margin: 0;
+}
+
+.top-row {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    /* background: firebrick; */
+}
+
+.top-row-text {
+    float: left;
+    width: 35%;
+    margin-top: 1rem;
+}
+
+.top-row-text h1,
+.top-row-text h3,
+.top-row-text h4,
+.top-row-text h5,
+.top-row-text p,
+.top-row-text span {
+    float: left;
+    width: 100%;
+    font-size: 1.15rem;
+    margin: 0.75rem;
+}
+
+.top-row-text h1 {
+    font-size: 1.5rem;
+}
+
+.top-row-text span {
+    margin-top: -0.5rem;
+    border-bottom: 1px solid rgb(221, 218, 218);
+    padding-bottom: 1rem;
+}
+
+.top-row-text ul li {
+    margin-left: -2.75rem;
+    font-size: 1rem;
+}
+
+.top-row-text ul {
+    margin-top: -1rem;
+}
+
+.background-image {
+    float: left;
+    width: 60%;
+    height: 22.5rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    background-image: url(img/ukraine-soldier-background-image.png);
+}
+
+.ukraine-background-span {
+    color: white;
+    float: left;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.btm-ukraine-span {
+    float: left;
+    width: 100%;
+    margin-top: 17.5rem;
+    margin-left: 1rem;
+    color: white;
+}
+
+.nav-dots {
+    float: left;
+    width: 15%;
+    margin-left: 15rem;
+}
+
+.nav-arrows {
+    float: right;
+    width: 20%;
+    padding-left: 5rem;
+    /* background: firebrick; */
+}
+
+.nav-arrows button {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.nav-arrows button a {
+    text-decoration: none;
+}
+
+.bottom-row {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid black;
+    /* background: skyblue; */
+    padding-bottom: 2rem;
+}
+
+.bottom-row-text {
+    float: left;
+    width: 35%;
+    font-size: 1.2rem;
+}
+
+.bottom-row-text h1,
+.bottom-row-text h3,
+.bottom-row-text h4,
+.bottom-row-text h5,
+.bottom-row-text p,
+.bottom-row-text span {
+    float: left;
+    width: 100%
+}
+
+.bottom-row-text .btm {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid rgb(221, 218, 218);
+    padding-bottom: 2rem;
+}
+
+
+.bottom-row img {
+    float: left;
+    width: 60%;
+    height: 32.5rem;
+    margin-left: 2rem;
+
+}
+
+.column2 {
+    float: left;
+    width: 30%;
+    padding: 2.25rem;
+    border-left: 1px solid rgb(221, 218, 218);
+    /* background: forestgreen; */
+}
+
+.madrid-image {
+    float: left;
+    width: 100%;
+    height: 15rem;
+    background-image: url(img/madrid-photo.png);
+    background-repeat: no-repeat;
+}
+
+.madrid {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid rgb(221, 218, 218);
+    margin-bottom: 1rem;
+}
+
+.madrid h3,
+.madrid p {
+    float: left;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.madrid p {
+    margin-top: -1rem;
+    font-size: 1.25rem;
+}
+
+.restaurant-houseplant {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 2rem;
+}
+
+.restaurant,
+.plant {
+    float: left;
+    width: 50%;
+    /* margin: 0 1rem; */
+}
+
+.restaurant {
+    padding: 0 2rem 0 0;
+}
+
+.plant {
+    border-left: 1px solid rgb(221, 218, 218);
+    padding: 0 0 0 2rem;
+}
+
+.restaurant img,
+.plant img {
+    float: left;
+    width: 100%;
+}
+
+.restaurant h4,
+.restaurant span,
+.plant h4,
+.plant span {
+    float: left;
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+.restaurant span,
+.plant span {
+    margin-top: -1rem;
+}
+
+.opinion {
+    float: left;
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+.desantis-rowling {
+    float: left;
+    width: 100%;
+    padding-right: 2rem;
+}
+
+.desantis,
+.rowling {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid rgb(221, 218, 218);
+    padding-bottom: 2rem;
+}
+
+.desantis {
+    margin-bottom: 2.5rem;
+    /* margin-top: -0.5rem; */
+}
+
+
+.desantis h5,
+.desantis span {
+    float: left;
+    width: 75%;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+
+
+.desantis img {
+    float: right;
+    width: 10%;
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+.rowling h4 {
+    float: left;
+    width: 40%;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.rowling span {
+    float: left;
+    width: 40%;
+    font-size: 1.25rem;
+    margin-bottom: -0.5rem;
+}
+
+.rowling-btm-span {
+    margin-top: -1.5rem;
+}
+
+.rowling img {
+    float: right;
+    width: 35%;
+    height: 12rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .menu-bar-section {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    #magnifying-glass {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    #games-li,
+    #wirecutter-li {
+        display: none;
+    }
+
+    #chinese-header-li {
+        display: none;
+    }
+
+    .bottom-nav li {
+        margin: 0 0.25rem;
+    }
+}
+
+
+/* @media screen and (max-width: 1100px) {} */
+
+@media screen and (max-width: 1050px) {
+    #magnifying-glass {
+        display: none;
+    }
+
+    #athletic-li,
+    #cooking-li {
+        display: none;
+    }
+
+    .region-nav {
+        margin-left: 20%;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 975px) {
+    .nav-arrows {
+        display: none;
+    }
+
+    #espanol-header-li {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .region-nav {
+        float: left;
+        width: 40%;
+        font-size: 1.5rem;
+        margin-top: 0.25rem;
+        margin-right: -4rem;
+        margin-left: 25%;
+        text-align: left;
+    }
+
+    .region-nav li,
+    .region-nav a {
+        list-style: none;
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+    }
+
+    .region-nav li {
+        margin: 0 0.5em;
+    }
+
+
+    .top-buttons {
+
+        width: 30%;
+
+        height: 4rem;
+        /* background: forestgreen; */
+    }
+
+    #subscribe-button,
+    #login-button {
+        background: rgb(28, 129, 168);
+        color: white;
+        border-radius: 0.5rem;
+        height: 3.5rem;
+        font-size: 1.25rem;
+        margin-right: 0;
+    }
+
+    #subscribe-button {
+        float: right;
+        width: 50%;
+        margin-top: 0rem;
+    }
+
+    #login-button {
+        display: none;
+    }
+
+    #cooking-li,
+    #real-estate-li {
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    #magazine-li,
+    #travel-li {
+        display: none;
+    }
+
+    /* .bottom-nav ul li {
+        margin-right: 2%;
+    } */
+}
+
+
+@media screen and (max-width: 750px) {
+    /* .nyt-title-row h2 {
+        float: left;
+        width: 40%;
+        margin-top: 0;
+        margin-left: 5%;
+    } */
+
+    #style-li,
+    #food-li {
+        display: none;
+    }
+
+    .bottom-nav ul li {
+        margin-right: 2%;
+    }
+
+    #canada-header-li {
+        display: none;
+    }
+
+    .column1 {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .column2 {
+        clear: both;
+        width: 100%;
+        padding: 0 2rem;
+        margin-top: 2rem;
+    }
+
+    .madrid-image {
+        width: 75%;
+        margin: 0 15%;
+    }
+
+    .madrid {
+        width: 70%;
+        margin: 0 15%;
+        border: none;
+    }
+
+    .restaurant-houseplant {
+        width: 75%;
+        margin: 0 15%;
+    }
+
+    .restaurant {
+        width: 100%;
+    }
+
+    .restaurant img {
+        width: 85%;
+    }
+
+
+    .plant,
+    .restaurant {
+        display: none;
+    }
+
+    .desantis-rowling {
+        width: 70%;
+        margin: 0 15%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .nyt-title-row h2 {
+        margin-top: 0;
+    }
+
+    .weather-stock,
+    .day-paper {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .nyt-title-row h2 {
+        margin-top: 0;
+        /* background: yellow; */
+    }
+
+    .weather-stock,
+    .day-paper {
+        width: 10%;
+    }
+
+    #health-li,
+    #nyc-li,
+    #travel-li {
+        display: none;
+    }
+
+
+    /* Stopped here: make the subscrbibe button flow a little better in this media query so it doesnt jump around at the same time I delete the above nav li words */
+
+
+
+    .weather-stock,
+    .day-paper {
+        width: 10%;
+    }
+
+    .region-nav {
+        margin-left: 25%;
+        padding-left: -10%;
+    }
+
+    #subscribe-button {
+        width: 50%;
+        margin-left: 1rem;
+        margin-top: 0rem;
+        /* height: 5rem; */
+    }
+
+    .bottom-nav ul {
+        padding-left: 10%;
+    }
+
+    #opinion-li {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    #business-li,
+    #science {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 575px) {
+    #usa-header-li {
+        display: none;
+    }
+
+    #international {
+        display: none;
+    }
+
+    #subscribe-button {
+        display: none;
+    }
+
+    .weather-stock {
+        display: none;
+    }
+
+    .day-paper {
+        float: left;
+        width: 100%;
+        margin-top: -4rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .region-nav {
+        float: left;
+        width: 40%;
+        font-size: 1.5rem;
+        margin-top: 0.25rem;
+        padding-right: 4rem;
+        text-align: center;
+        /* background: firebrick; */
+    }
+
+    .nyt-title-row {
+        display: block;
+    }
+
+    .nyt-title-row h2 {
+        width: 100%;
+        height: 4rem;
+        margin-bottom: 8rem;
+
+    }
+
+    .nyt-title-row h2 img {
+        width: 85%;
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+
+}
+
+
+@media screen and (max-width: 514px) {
+    .top-nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    .day-paper {
+        margin-top: -5.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #science-li,
+    #books-li,
+    #style-li {
+        display: none;
+    }
+
+    .column1 {
+        margin-left: 0;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .background-image {
+        clear: both;
+        width: 85%;
+    }
+
+    .top-row-text,
+    .bottom-row-text {
+        width: 85%;
+        margin-left: 5%;
+        padding: 0 1rem;
+    }
+
+    .bottom-row {
+        width: 100%;
+    }
+
+    .bottom-row .computer-monitor {
+        clear: both;
+        width: 85%;
+    }
+
+
+    .madrid-image {
+        width: 75%;
+        margin: 0 10%;
+    }
+
+    .madrid {
+        width: 75%;
+        margin: 0 10%;
+        border: none;
+    }
+
+    .restaurant-houseplant {
+        width: 75%;
+        margin: 0 10%;
+    }
+
+    .restaurant {
+        width: 100%;
+    }
+
+    .plant {
+        display: none;
+    }
+
+
+
+}
+
+
+
+
+
+/* below in media query: remove dots under russian soldier background image */
+
+@media screen and (max-width: 450px) {
+    .nyt-title-row h2 {
+        margin-right: 10%;
+        width: 100%;
+        height: 4rem;
+    }
+
+    .nyt-title-row img {
+        margin-right: 10%;
+        width: 75%;
+        height: 6rem;
+    }
+
+    .region-nav {
+        display: none;
+    }
+
+
+    .bottom-nav ul li {
+        float: left;
+        width: 5%;
+        font-size: 1rem;
+        /* margin: 0 0.5rem; */
+        list-style: none;
+    }
+
+    .madrid-image {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .madrid {
+        width: 80%;
+        margin: 0 10%;
+        border: none;
+    }
+
+    .restaurant-houseplant {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .restaurant {
+        width: 100%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 385px) {
+
+
+    .menu-bar-section {
+        width: 10%;
+        /* margin-left: 50%; */
+    }
+}
